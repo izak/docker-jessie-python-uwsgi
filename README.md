@@ -32,7 +32,6 @@ to customise things. For example:
     ENV         UWSGI_HARAKIRI         65
     ENV         UWSGI_LOG_FILE         /var/log/uwsgi/uwsgi.log
     ENV         WSGI_MODULE            wsgi_module:application
-    ENV         APP_DIR                /var/app
     ENV         LOG_FILENAME           /var/log/yourapp.log
 
     COPY        your.wheel.tar.gz /var/local/cache/wheelhouse/
