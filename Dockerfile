@@ -7,7 +7,7 @@ ENV         WHEEL_DIR=/var/local/cache/wheelhouse TMP_WHEEL_DIR=/tmp/wheelhouse/
 RUN         mkdir -p "$WHEEL_DIR"
 VOLUME      ["/var/local/cache/wheelhouse"]
 
-RUN         apt-get -y install uwsgi lsb-invalid-mta logrotate cron
+RUN         apt-get -y install uwsgi uwsgi-plugin-python lsb-invalid-mta logrotate cron
 
 # Add scripts and config files to docker container
 COPY        uwsgi-start.sh /usr/local/bin/uwsgi-start.sh

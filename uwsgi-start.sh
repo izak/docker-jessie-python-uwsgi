@@ -67,7 +67,7 @@ if ! pidof cron > /dev/null; then
 fi
 
 export USER="$UWSGI_UID"
-uwsgi --master \
+/usr/bin/uwsgi_python --master \
     --http-socket :8080 \
     --module "$WSGI_MODULE" \
     --max-requests "$UWSGI_MAX_REQUEST" \
